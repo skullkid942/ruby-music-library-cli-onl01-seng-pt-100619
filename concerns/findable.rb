@@ -3,7 +3,7 @@ require 'pry'
 Bundler.require	Bundler.require
 
 
-module Concerns	module Concerns
+module Concerns
 
 	module InstanceMethods
 		def save
@@ -39,6 +39,5 @@ module Concerns	module Concerns
 	end
 
 end	
-end
 
 require_all 'lib'
