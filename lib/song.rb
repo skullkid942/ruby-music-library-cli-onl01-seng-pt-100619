@@ -1,4 +1,8 @@
 class Song
+  
+  include Concerns::InstanceMethods
+	extend Concerns::ClassMethods
+	extend Concerns::Findable
 
   attr_reader :artist, :genre
 
