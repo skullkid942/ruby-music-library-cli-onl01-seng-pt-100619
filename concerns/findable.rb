@@ -41,3 +41,4 @@ module Concerns	module Concerns
 end	
 end
 
+require_all 'lib'
