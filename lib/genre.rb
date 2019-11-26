@@ -3,6 +3,8 @@ class Genre
   include Concerns::InstanceMethods
 	extend Concerns::ClassMethods
 	extend Concerns::Findable
+	
+	@@all = []
 
   attr_accessor :songs
 
@@ -10,6 +12,10 @@ class Genre
     @name = name
     @songs = []
   end
+  
+  def self.all 
+    @@all
+  end 
 
   def self.create(name)
 		instance = Genre.new(name)
