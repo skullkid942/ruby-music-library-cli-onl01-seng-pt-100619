@@ -3,14 +3,22 @@ class Artist
   include Concerns::InstanceMethods
 	extend Concerns::ClassMethods
 	extend Concerns::Findable
-
+  
+  @@all = []
+  
   attr_accessor :songs
 
   def initialize(name)
 		@name = name
     @songs = []
 	end
-
+  
+  @@all = []
+  
+  def self.all 
+    @@all
+  end 
+  
   def self.create(name)
 		instance = Artist.new(name)
 		instance.save
