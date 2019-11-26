@@ -1,4 +1,4 @@
-class Artist < Super
+class Artist
 
   attr_accessor :songs
 
