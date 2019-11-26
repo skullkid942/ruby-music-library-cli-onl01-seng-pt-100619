@@ -1,4 +1,4 @@
-class Genre < Super
+class Genre
 
   attr_accessor :songs
 
