@@ -1,6 +1,6 @@
 require 'bundler'
 require 'pry'
-Bundler.require	Bundler.require
+Bundler.require
 
 
 module Concerns
